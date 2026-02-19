@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook - log in or sign up</title>
+<link rel="icon" sizes="32x32" href="fb_small_logo.png">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.left {
+    max-width: 450px;
+}
+
+.left img {
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+.left h2 {
+    font-size: 32px;
+    color: #1c1e21;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.right {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    width: 360px;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right input {
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.right button {
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.right button:hover {
+    background-color: #165ecc;
+}
+
+.right a {
+    text-align: center;
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.right hr {
+    border: none;
+    border-top: 1px solid #dddfe2;
+    margin: 18px 0;
+}
+
+.create-account {
+    background-color: #42b72a;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.create-account:hover {
+    background-color: #36a420;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .left img {
+        width: 250px;
+    }
+    .left h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <img src="facebook_logo.svg" alt="Facebook">
+        <h2>Facebook helps you connect and share with the people in your life.</h2>
+    </div>
+    <div class="right">
+        <form action="">
+            <input type="text" placeholder="Email address or phone number">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log in</button>
+            <a href="#">Forgotten password?</a>
+            <hr>
+            <button type="button" class="create-account">Create new account</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
